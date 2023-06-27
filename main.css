@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*Chamado reset para que o navegador nao interfira nas propriedades do elementos*/
+}
+
+body > header {
+    background-color: chocolate; /*ele ira pintar somente o header mais proximo do body,o header time esta muito mais distante*/
+    padding: 16px 0; /* Para adicionar espacamento no cabecalho 16px em cima e em baixo,0 nas laterais*/
+    color: aliceblue;
+}
+
+header li {
+    display: inline; /*Para deixar os botoes das seções um ao lado do outro*/
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    /* Serve para caber todos os elementos na tela independente do tamanho */
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Serve para organizar o layout*/
+}
+
+.articles article img {
+    width: 100%;
+    /*Serve para limitar o tamanho das imargens para caber na tela */
+}
+
+.articles article {
+    width: 30%;
+    /*Serve para limitar elementos em uma só linha */
+}
+
+header .container {
+    display: flex; /*Colocar os alementos do cabecalho um ao lado do outro*/
+    align-items: center; /*Coloca os botoes la de cime ao lado cimetrico do titulo */
+    justify-content: space-between;
+    
+}
+
+section{
+    padding: 16px 0; /*Adiciona espacamento nas secoes 'Esportes e economia e cinema e musica' 16px cima e baixo somente */
+}
+
+section h2,
+.articles article { /*Adiciona espacamento entre as imargens */
+    margin-bottom: 14px; /*Adiciona espacamento entre os titulos das imargens */
+}
+
+.articles article h3 {
+    margin: 8px 0 8px 0; /* Adicionando espaco do h3 'titulo das noticias' das demais infos*/
+}
+
+.articles article a {
+    background-color: blue; /*Cor de fundo dos botoes ler mais das noticias */
+    color: black;   /*Cor da letra dos botoes ler mais das noticias */
+    text-decoration: none; /*tira aquele sublinhado dos botoes ler mais das noticias */
+    padding: 6px;   /*Aumenta o tamanho dos botoes ler mais das noticias */
+    display: inline-block; /*Corrige posicionamento dos botoes para nao tampar textos */
+}
+
+header .container li a {
+    color: aliceblue; /*Cor da letra do botao de cima no menu */
+    font-weight: bold; /*Estilo da letra do botao de cima no menu */
+    padding: 8px; /*Espacamento da letra do botao de cima no menu */
+    text-decoration: none; /*Tirar aquele sublinhado das letras do botao de cima no menu */
+    margin-left: 8px; /*Espacamento dos botoes entre a margem esquerda em cima do menu */
+}
+
+#sports {
+    background-color: rgba(112, 202, 100, 0.966); /*Cor de fundo da secao esportes */
+    font-family: Arial, Helvetica, sans-serif; /*Fonte de texto da secao esportes */
+}
+
+#economy {
+    background-color: rgba(235, 15, 15, 0.418); /*Cor de fundo da secao economia */
+    font-family: Arial, Helvetica, sans-serif; /*Fonte de texto da secao economia */
+}
+
+#sports .articles article a{
+    background-color: rgba(48, 236, 23, 0.863); /*Alterando a cor dos botoes da secao esportes */
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#economy .articles article a{
+    background-color: rgba(235, 15, 15, 0.418); /*Alterando a cor dos botoes da secao economia */
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#cinema {
+    background-color: rgb(87, 146, 206);
+}
+
+#cinema .articles article a {
+    background-color: rgb(0, 26, 255);
+    font-weight: bolder;
+    margin-top: 8px;
+}
+
+#cinema .articles article {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#musica {
+    background-color: rgb(211, 201, 113);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#musica .articles article a {
+    background-color: rgb(253, 232, 44);
+    margin-top: 8px;
+}
+
+#botao img {
+    width: 10%;
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+    left: 90%;
+    top: 94%;
+}
+
+#botao a {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 91%;
+    top: 95%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#ajuda {
+    background-color: rgba(0, 247, 255, 0.589);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ajuda .container li a {
+    color: darkorange;
+    margin-right: 160px;
+    margin-bottom: -2px;
+    font-weight: bold;
+}
+
+#ajuda  li {
+    font-weight: bold;
+    
+}
